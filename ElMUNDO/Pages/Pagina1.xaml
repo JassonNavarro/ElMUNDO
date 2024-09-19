@@ -2,12 +2,93 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ElMUNDO.Pages.Pagina1"
-             Title="Noticias">
-    
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Noticias"
+             BackgroundColor="Wheat">
+
+    <ScrollView>
+        <Grid Padding="10" RowSpacing="10">
+
+            <!-- Define el número de filas en el Grid -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <!-- Fila 1 -->
+                <RowDefinition Height="Auto" />
+                <!-- Fila 2 -->
+                <RowDefinition Height="Auto" />
+                <!-- Fila 3 -->
+                <RowDefinition Height="Auto" />
+                <!-- Fila 4 -->
+            </Grid.RowDefinitions>
+
+            <!-- Noticia 1 -->
+            <Frame Grid.Row="0" CornerRadius="10" BorderColor="Wheat" Padding="10" HasShadow="True" BackgroundColor="White">
+                <StackLayout>
+                    <Image Source="noticiauno.jpg" Aspect="AspectFill" HeightRequest="250" />
+                    <Label TextColor="Black" Text="Inicia construcción del Parque de la Familia en las faldas del volcán de San Miguel" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" />
+                    <Label TextColor="Black" Text="El Ministerio de Obras Públicas (Mopt) inició este lunes la construcción del Parque de la Familia que estará ubicado en las faldas del volcán Chaparrastique, en el cantón Las Placitas, en el distrito de San Miguel.
+
+          “Este es el Parque de la Familia por el volcán Chaparrastique, en el sector de Las Placitas. Este es un espacio público que estaba totalmente abandonado”, destacó el ministro de Obras Públicas, Romeo Rodríguez.
+
+          Rodríguez detalló que serán 9,580 metros cuadrados los intervenidos para la construcción de dicha zona recreativa y enfatizó que “es una de las intervenciones más grandes en espacio público que hemos desarrollado en nuestro país por parte del Mopt”.
+
+           El titular de Obras Públicas puntualizó que parte de las intervenciones contemplan la siembra de 50 árboles adicionales, instalación de luminarias, canchas de usos múltiples, zonas de descanso, bahías de parqueos, miradores, área de juegos para niños y torres “para que las familias realicen actividades con la seguridad adecuada”.
+
+          Según el ministro, la obra se realizará en un plazo máximo de cinco meses y enfatizó que prevé finalizar los trabajos antes del periodo estipulado.. Aquí puedes agregar más detalles sobre el contenido de la noticia." FontSize="Micro" />
+                </StackLayout>
+            </Frame>
+
+            <!-- Noticia 2 -->
+            <Frame Grid.Row="1" CornerRadius="10" BorderColor="Wheat" Padding="10" HasShadow="True" BackgroundColor="White">
+                <StackLayout>
+                    <Image Source="noticiac.jfif" Aspect="AspectFill" HeightRequest="250" />
+                    <Label TextColor="Black" Text="Al menos 71 sismos han sacudido a El Salvador desde el viernes" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" />
+                    <Label TextColor="Black" Text="El Ministerio de Medio Ambiente y Recursos Naturales (Marn) anunció la mañana de este martes que El Salvador ha sido sacudido por 71 sismos desde el viernes en la tarde, cuando inició una actividad sísmica frente a las costas de Sonsonate.
+
+             Los temblores iniciaron precisamente con una sacudida de 5.2 en la escala de Richter, a las 3:21 de la tarde que fue percibida en el área metropolitana de San Salvador. Los más de 71 sismos sentidos fueron contabilizados hasta las 6:00 de la mañana de este martes.
+
+              Medio Ambiente ha dicho en informes especiales que la actividad sísmica frente a Sonsonate es originada por el proceso de subducción entre la placa de Cocos y del Caribe.
+
+            De los 71 sismos, un total de 24 temblores han sido sentidos por la población y sus magnitudes han oscilado entre los 3.5 y 5.7, esta última magnitud sentida en un sismo ocurrido la noche del sábado a las 10:58, causando algún susto entre algún salvadoreño.
+
+             Esa noche, la tierra se movió al menos en cuatro ocasiones, dos de ellas percibidas por los salvadoreños.
+
+             El Marn ha descartado que esta actividad cause algún tsunami." FontSize="Micro" />
+                </StackLayout>
+            </Frame>
+
+            <!-- Noticia 3 -->
+            <Frame Grid.Row="2" CornerRadius="10" BorderColor="Wheat" Padding="10" HasShadow="True" BackgroundColor="White">
+                <StackLayout>
+                    <Image Source="noticia3.jfif" Aspect="AspectFill" HeightRequest="250" />
+                    <Label TextColor="Black" Text="Motociclista muere en accidente de tránsito en carretera a Los Naranjos, Sonsonate" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" />
+                    <Label TextColor="Black" Text="La Policía Nacional Civil (PNC) reportó la noche de este lunes la muerte de un motociclista en el kilómetro 67 de la carretera que conduce a Los Naranjos, en Sonsonate.
+
+              Según información preliminar, publicada a través de la cuenta de X de la PNC, en dicho siniestro también está involucrado un microbús, sin embargo, no especificaron los detalles ni la identidad del motociclista fallecido.
+
+              Este trágico accidente se suma al que sucedió la mañana de este lunes en Santa Tecla, que dejó un fallecido y diez lesionados en el que se vieron involucrados un microbús particular y un microbús de la ruta 101-B.
+
+               La racha de accidentes continuó tras el reportado en el kilómetro 17 y medio de la carretera de oro, a la altura del distrito de Ciudad Delgado, en el que dos camiones chocaron y dejaron dos lesionados. Además se reportó otro accidente en la carretera a Sonsonate a la altura de Lourdes.
+
+              Según datos del Observatorio Nacional de Seguridad Vial, desde el primero de enero hasta el 15 de septiembre, se reportan 13,905 accidentes de tránsito, 8,122 lesionados y 903 fallecidos." FontSize="Micro" />
+                </StackLayout>
+            </Frame>
+
+            <!-- Noticia 4 -->
+            <Frame Grid.Row="3" CornerRadius="10" BorderColor="Wheat" Padding="10" HasShadow="True" BackgroundColor="White">
+                <StackLayout>
+                    <Image Source="noticia4.jfif" Aspect="AspectFill" HeightRequest="250" />
+                    <Label TextColor="Black" Text="Ernesto Castro sobre audios con Alejandro Muyshondt: La verdad que me da risa " FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" />
+
+                    <Label TextColor="Black" Text="El presidente de la Asamblea Legislativa, Ernesto Castro, calificó este martes de “cuento que se están inventando”
+                los audios de conversaciones que supuestamente sostuvo con Alejandro Muyshondt, el ahora fallecido exasesor de seguridad nacional de la Presidencia de la República.
+
+                    En los audios publicados por Infobae y Prensa Comunitaria de Guatemala, Ernesto Castro supuestamente está pidiendo a Alejandro Muyshondt que montara
+                un sistema de espionaje para periodistas y opositores, y le pide intervenir a los periodistas Jorge Betrán Luna y Carlos Dada. Según las publicaciones, 
+                esta petición fue realizada en 2020 cuando fungía como secretario privado de la Presidencia." FontSize="Micro" />
+                </StackLayout>
+            </Frame>
+
+        </Grid>
+
+    </ScrollView>
 </ContentPage>
