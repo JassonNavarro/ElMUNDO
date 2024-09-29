@@ -13,6 +13,11 @@ namespace ElMUNDO
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Coffee Soda.ttf", "CoffeSoda");
+                    fonts.AddFont("Avocade Free.ttf", "AvocadeF");
+                    fonts.AddFont("Rubica PERSONAL USE ONLY!.ttf", "RUpeUO");
+                    fonts.AddFont("Loches.ttf", "Loches");
+
                 });
 
 #if DEBUG

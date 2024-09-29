@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ElMUNDO.Login"
-             Title="Login"
-              Shell.NavBarIsVisible="False" Background="#010320">
+             x:Class="ElMUNDO.CrearCuenta"
+             Title="CrearCuenta"
+             Background="#010320">
     <VerticalStackLayout Padding="9">
         <Frame BackgroundColor="#030233" BorderColor="Black"
-           HeightRequest="800" WidthRequest="390" Padding="100">
+       HeightRequest="800" WidthRequest="390" Padding="100">
             <Grid HorizontalOptions="CenterAndExpand" RowSpacing="30" WidthRequest="195">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -24,12 +24,11 @@
                     </Border.StrokeShape>
                 </Border>
 
-                <Label  Grid.Row="1" Text="Bienvenido" HorizontalOptions="Center" FontSize="26"  FontAttributes="Bold" FontFamily="CoffeSoda" TextColor="#f5f5f5" />
-                <Entry x:Name="userentry" Grid.Row="2" Placeholder="Usuario"  PlaceholderColor="#f5f5f5"  TextColor="#f5f5f5"/>
-                <Entry  IsPassword="True" x:Name="passwordentry" Grid.Row="3" Placeholder="Contraseña"   PlaceholderColor="#f5f5f5" TextColor="#f5f5f5"/>
-                <Button Grid.Row="4" x:Name="loginBTN" Text="Iniciar sesion" Background="#d20000"   TextColor="#f5f5f5" Clicked="loginBTN_Clicked"/>
-                <Button Grid.Row="5" x:Name="registrarBTN" Text="Registrate" Background="#d20000"  TextColor="#f5f5f5" Clicked="registrarBTN_Clicked"/>
-                <Label Grid.Row="6" Text="Olvidastes tu contraseña" HorizontalOptions="Center" TextColor="#f5f5f5"  TextDecorations="Underline"/>
+                <Label  Grid.Row="1" Text="Crear cuenta" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" FontFamily="CoffeSoda" TextColor="#f5f5f5" />
+                <Entry x:Name="userentry" Grid.Row="2" Placeholder="Usuario" PlaceholderColor="#f5f5f5"  TextColor="#f5f5f5"/>
+                <Entry  IsPassword="True" x:Name="passwordentry" Grid.Row="3" Placeholder="Contraseña"  PlaceholderColor="#f5f5f5" TextColor="#f5f5f5"/>
+                <Button Grid.Row="5" x:Name="registrarBTN" Text="Registrar" Background="#d20000"   TextColor="#f5f5f5" Clicked="registrarBTN_Clicked"/>
+               
             </Grid>
         </Frame>
     </VerticalStackLayout>
