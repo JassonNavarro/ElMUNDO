@@ -76,6 +76,12 @@
 	  <MauiXaml Update="Pages\Pagina2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\Pagina3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Pagina4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\TabbedPageE.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

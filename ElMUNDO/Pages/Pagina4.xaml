@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ElMUNDO.Pages.Pagina2"
-             Title="Deportes"
-             BackgroundColor="Wheat">
+             x:Class="ElMUNDO.Pages.Pagina4"
+             Title="Intnacionales"
+              BackgroundColor="Wheat">
+
+
     <ScrollView>
         <Grid Padding="10" RowSpacing="10">
 
@@ -18,15 +20,14 @@
                 <RowDefinition Height="Auto" />
                 <!-- Fila 4 -->
             </Grid.RowDefinitions>
-
             <!-- Noticia 1 -->
             <Frame Grid.Row="0" CornerRadius="10" BorderColor="Wheat" Padding="10" HasShadow="True" BackgroundColor="White">
                 <StackLayout>
-                    <Image Source="deporte1.jfif" Aspect="AspectFill" HeightRequest="250" />
-                    <Label Text="Águila se pone al día en un juego pendiente con Municipal Limeño" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" TextColor="Black" />
+                    <Image Source="inter1.jfif" Aspect="AspectFill" HeightRequest="250" />
+                    <Label Text="Nuevos bombardeos israelíes en Líbano dejan más de 100 muertos" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" TextColor="Black" />
                     <Label x:Name="noticia1Descripcion" TextColor="Black" Text="" FontSize="Micro" />
 
-                    <Button Text="Leer más"  CommandParameter="noticia1" Clicked="Button_Clicked_1" HeightRequest="10" WidthRequest="170" />
+                    <Button Text="Leer más"  CommandParameter="noticia1" Clicked="Button_Clicked_9" HeightRequest="10" WidthRequest="170"/>
 
                 </StackLayout>
             </Frame>
@@ -34,11 +35,11 @@
             <!-- Noticia 2 -->
             <Frame Grid.Row="1" CornerRadius="10" BorderColor="Wheat" Padding="10" HasShadow="True" BackgroundColor="White">
                 <StackLayout>
-                    <Image Source="deporte2.jfif" Aspect="AspectFill" HeightRequest="250" />
-                    <Label TextColor="Black" Text="Liverpool conquista San Siro en el clásico europeo ante el Milan" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" />
+                    <Image Source="inter2.jfif" Aspect="AspectFill" HeightRequest="250" />
+                    <Label TextColor="Black" Text="Víctimas por huracán John en México suman al menos 20, según la prensa local" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" />
                     <Label x:Name="noticia2Descripcion" TextColor="Black" Text="" FontSize="Micro" />
 
-                    <Button Text="Leer más"  CommandParameter="noticia2" Clicked="Button_Clicked_2" HeightRequest="10" WidthRequest="170" />
+                    <Button Text="Leer más"  CommandParameter="noticia2" Clicked="Button_Clicked_10"  HeightRequest="10" WidthRequest="170" />
 
                 </StackLayout>
             </Frame>
@@ -46,11 +47,11 @@
             <!-- Noticia 3 -->
             <Frame Grid.Row="2" CornerRadius="10" BorderColor="Wheat" Padding="10" HasShadow="True" BackgroundColor="White">
                 <StackLayout>
-                    <Image Source="deporte3.jfif" Aspect="AspectFill" HeightRequest="250" />
-                    <Label TextColor="Black" Text="El Bayern de Múnich aplasta al Dinamo Zagreb 9-2 en Champions League" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" />
+                    <Image Source="inter3.jfif" Aspect="AspectFill" HeightRequest="250" />
+                    <Label TextColor="Black" Text="Vías inundadas y apagones dificultan rescates en EEUU tras devastador huracán Helene" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" />
                     <Label x:Name="noticia3Descripcion" TextColor="Black" Text="" FontSize="Micro" />
 
-                    <Button Text="Leer más"  CommandParameter="noticia3" Clicked="Button_Clicked_3" HeightRequest="10" WidthRequest="170" />
+                    <Button Text="Leer más"  CommandParameter="noticia3" Clicked="Button_Clicked_11" HeightRequest="10" WidthRequest="170" />
 
 
                 </StackLayout>
@@ -59,15 +60,16 @@
             <!-- Noticia 4 -->
             <Frame Grid.Row="3" CornerRadius="10" BorderColor="Wheat" Padding="10" HasShadow="True" BackgroundColor="White">
                 <StackLayout>
-                    <Image Source="deporte4.jfif" Aspect="AspectFill" HeightRequest="250" />
-                    <Label TextColor="Black" Text="Real Madrid arranca en Champions con triunfo 3-1 ante Stuttgart" FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" />
+                    <Image Source="inter4.jfif" Aspect="AspectFill" HeightRequest="250" />
+                    <Label TextColor="Black" Text="Israel bombardea puertos y centrales eléctricas en Yemen” " FontAttributes="Bold" FontSize="Medium" Margin="0,10,0,0" />
                     <Label x:Name="noticia4Descricion" TextColor="Black" Text="" FontSize="Micro" />
 
-                    <Button Text="Leer más"  CommandParameter="noticia4" Clicked="Button_Clicked_4" HeightRequest="10" WidthRequest="170" />
+                    <Button Text="Leer más"  CommandParameter="noticia4" Clicked="Button_Clicked_12" HeightRequest="10" WidthRequest="170" />
 
                 </StackLayout>
             </Frame>
 
         </Grid>
     </ScrollView>
+
 </ContentPage>
