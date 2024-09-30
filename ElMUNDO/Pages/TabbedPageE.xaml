@@ -9,5 +9,7 @@
     <local1:MainPage/>
     <local:Pagina1/>
     <local:Pagina2/>
+    <local:Pagina3/>
+    <local:Pagina4/>
 
 </TabbedPage>
